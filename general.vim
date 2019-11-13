@@ -1,9 +1,9 @@
-" Theme
-set background=dark
-set termguicolors     " enable true colors support
 if !has('nvim')
   set nocompatible " don't try be vi compatible
 endif
+" Theme
+set background=dark
+set termguicolors     " enable true colors support
 syntax enable " Enable syntax highlighting
 
 set number " show line numbers

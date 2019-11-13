@@ -11,7 +11,7 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-
+Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 
@@ -64,7 +64,7 @@ Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-
+Plug 'croaker/mustang-vim'
 
 
 call plug#end()
