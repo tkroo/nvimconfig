@@ -5,11 +5,15 @@ endif
 set background=dark
 set termguicolors     " enable true colors support
 syntax enable " Enable syntax highlighting
+set omnifunc=syntaxcomplete#Complete
 
 set number " show line numbers
 set relativenumber " show relative line numbers
 filetype plugin indent on
 
+let g:python_host_prog="/usr/bin/python"
+
+let g:python3_host_prog="/usr/bin/python3"
 
 set encoding=utf-8
 set clipboard=unnamedplus
@@ -51,12 +55,10 @@ set noswapfile " Do not create .swp files
 set cmdheight=2
 
 " Centralize backups, swapfiles and undo history
-set undofile
 set backupdir=~/.config/nvim/sub/backups
 set directory=~/.config/nvim/sub/swaps
-if exists("&undodir")
-  set undodir=~/.config/nvim/sub/undo
-endif
+set undodir=~/.config/nvim/sub/undo
+set undofile
 
 
 " change foldmethod for pug
