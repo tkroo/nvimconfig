@@ -1,3 +1,4 @@
+
 " plugins moved to separate file
 source ~/.config/nvim/plugins.vim
 
@@ -8,6 +9,8 @@ source ~/.config/nvim/keymappings.vim
 
 " source lightline settings
 source ~/.config/nvim/lightline.vim
+
+source ~/.config/nvim/denitesettings.vim
 
 " AFTER PLUGINS LOADED
 " colorscheme
