@@ -1,17 +1,11 @@
-if !has('nvim')
-  set nocompatible " don't try be vi compatible
-endif
-" Theme
+filetype plugin indent on
 set background=dark
 set termguicolors     " enable true colors support
 syntax enable " Enable syntax highlighting
 set omnifunc=syntaxcomplete#Complete
-
 set number " show line numbers
 set relativenumber " show relative line numbers
-filetype plugin indent on
 
-let g:python_host_prog="/usr/bin/python"
 
 let g:python3_host_prog="/usr/bin/python3"
 
