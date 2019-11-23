@@ -6,7 +6,7 @@ set omnifunc=syntaxcomplete#Complete
 set number " show line numbers
 set relativenumber " show relative line numbers
 
-
+let g:python_host_prog="/usr/bin/python"
 let g:python3_host_prog="/usr/bin/python3"
 
 set encoding=utf-8
