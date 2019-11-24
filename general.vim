@@ -36,10 +36,21 @@ autocmd BufNewFile,BufRead *.js set ft=javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.js.liquid set ft=javascript
 
+" prevent auto insertion of comments on insert new line
+" autocmd BufNewFile,BufRead * setlocal formatoptions+=cqn
+augroup Format-Options
+  autocmd!
+  autocmd BufEnter * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" This can be done as well instead of the previous line, for setting formatoptions as you choose:
+  autocmd BufEnter * setlocal formatoptions=crqn2l1j
+  augroup END
+
 " abbreviations
 cabbrev PI PlugInstall
 cabbrev PU PlugUpdate
 
+" set python paths
 let g:python_host_prog="/usr/bin/python"
 let g:python3_host_prog="/usr/bin/python3"
 
