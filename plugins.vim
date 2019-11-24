@@ -65,15 +65,10 @@ Plug 'https://github.com/google/vim-searchindex.git'
 
 " colorschemes
 Plug 'https://github.com/sainnhe/gruvbox-material.git'
-Plug 'https://github.com/doums/darcula'
 Plug 'chriskempson/base16-vim'
 Plug 'joshdick/onedark.vim'
-Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-Plug 'whatyouhide/vim-gotham'
-Plug 'croaker/mustang-vim'
 
 call plug#end()
 
