@@ -43,6 +43,7 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 " Plug 'https://github.com/jreybert/vimagit.git'
 
 " utility
+Plug 'mbbill/undotree'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
