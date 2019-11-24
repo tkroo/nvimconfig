@@ -12,9 +12,9 @@ Plug 'jeffkreeftmeijer/neovim-sensible'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-Plug 'Shougo/denite.nvim'
+" Plug 'Shougo/denite.nvim'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'neomake/neomake', { 'on': 'Neomake' }
+" Plug 'neomake/neomake', { 'on': 'Neomake' }
 
 "Javascript Plugins
 Plug 'pangloss/vim-javascript'
@@ -91,6 +91,6 @@ let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
 
-autocmd! BufWritePost * Neomake
-let g:neomake_warning_sign = { 'text': '?', 'texthl': 'WarningMsg' }
-let g:neomake_error_sign = { 'text': 'X', 'texthl': 'ErrorMsg' }
+" autocmd! BufWritePost * Neomake
+" let g:neomake_warning_sign = { 'text': '?', 'texthl': 'WarningMsg' }
+" let g:neomake_error_sign = { 'text': 'X', 'texthl': 'ErrorMsg' }

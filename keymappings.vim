@@ -8,6 +8,15 @@ let mapleader=','
 " run commands with semicolon
 nnoremap ; :
 
+" Silver Searcher
+" grep word under cursor
+nnoremap <leader>ag :Ag <C-R><C-W><CR>
+xnoremap <leader>ag :Ag <C-R><C-W><CR>
+nnoremap <leader>AG :Ag! <C-R><C-W><CR>
+xnoremap <leader>AG :Ag! <C-R><C-W><CR>
+
+" map ctrl-p to fzf
+nnoremap <C-p> :Files<Cr>
 
 " Clear highlighting on escape in normal mode
 "-----------------------------------------

@@ -10,14 +10,9 @@ source ~/.config/nvim/keymappings.vim
 " source lightline settings
 source ~/.config/nvim/lightline.vim
 
-source ~/.config/nvim/denitesettings.vim
-
 " AFTER PLUGINS LOADED
 " colorscheme
 colorscheme gruvbox-material
-
-" map ctrl-p to fzf
-nnoremap <C-p> :Files<Cr>
 
 :au VimEnter * :GitGutterLineNrHighlightsEnable
 :au VimEnter * :GitGutterLineHighlightsEnable
