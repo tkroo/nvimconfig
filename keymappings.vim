@@ -2,7 +2,7 @@
 " KEY MAPPINGS
 " """""""""""""""""""""""""""
 
-" set leader to comma
+" set leader to comma (This is set by nvim-sensible)
 let mapleader=','
 
 " run commands with semicolon
@@ -37,6 +37,16 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up> gk
+
+" leader d is delete
+nnoremap x "_x
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
+
+nnoremap <leader>d ""d
+nnoremap <leader>D ""D
+vnoremap <leader>d ""d
 
 " ctrl-p for fuzzy find
 noremap <C-p> :FZF<CR>
