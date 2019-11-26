@@ -1,21 +1,23 @@
+" see :help nvim-defaults
 set termguicolors     " enable true colors support
 syntax enable " Enable syntax highlighting
 set omnifunc=syntaxcomplete#Complete
-" set number " show line numbers
-" set relativenumber " show relative line numbers
-" set clipboard=unnamedplus
-" set mouse=a
-" set expandtab " use spaces instead of tabs.
-" set shiftwidth=2
-" set showmode " handled by statusline
 set cursorline " highlight current line
 set path+=**
 set hidden
+set mouse=a
+set number relativenumber
+" open help on right in vertical split
+cnoreabbrev H vert bo h 
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
+set colorcolumn=80
+" set clipboard+=unnamedplus
+set clipboard=unnamed,unnamedplus
 set title " show title in terminal title bar
 set tabstop=2 " set tab spaces
 set softtabstop=2
+set expandtab shiftwidth=2
 set smartindent
 set showmatch " highlight matching [{()}]
 set splitbelow " open new splits to right and bottom
@@ -29,6 +31,7 @@ set backupdir=~/.config/nvim/sub/backups
 set directory=~/.config/nvim/sub/swaps
 set undodir=~/.config/nvim/sub/undo
 set undofile
+set list listchars=tab:▸▸,trail:·
 
 " change foldmethod for pug
 autocmd Filetype pug setlocal foldmethod=indent

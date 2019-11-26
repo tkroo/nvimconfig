@@ -7,13 +7,13 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'jeffkreeftmeijer/neovim-sensible'
-
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-" Plug 'Shougo/denite.nvim'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'universal-ctags/ctags'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/gutentags_plus'
 " Plug 'neomake/neomake', { 'on': 'Neomake' }
 
 "Javascript Plugins
@@ -31,10 +31,10 @@ Plug '1995eaton/vim-better-javascript-completion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'mgee/lightline-bufferline'
 Plug 'ap/vim-buftabline'
-Plug 'universal-ctags/ctags'
 "Plug 'majutsushi/tagbar'
 
 " git
@@ -92,6 +92,17 @@ let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
 
+" enable gtags module
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+" config project root markers.
+let g:gutentags_project_root = ['.root']
+" generate datebases in my cache directory, prevent gtags files polluting my project
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+" change focus to quickfix window after search (optional).
+let g:gutentags_plus_switch = 1
+
 " autocmd! BufWritePost * Neomake
 " let g:neomake_warning_sign = { 'text': '?', 'texthl': 'WarningMsg' }
 " let g:neomake_error_sign = { 'text': 'X', 'texthl': 'ErrorMsg' }
+
+let g:NERDTreeStatusline = '%#NonText#'
