@@ -72,3 +72,5 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | wincmd p | ene | exe 'NERDTree' argv()[0] | endif
