@@ -48,10 +48,10 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 
 " leader d is delete
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
+" nnoremap x "_x
+" nnoremap d "_d
+" nnoremap D "_D
+" vnoremap d "_d
 
 nnoremap <leader>d ""d
 nnoremap <leader>D ""D
