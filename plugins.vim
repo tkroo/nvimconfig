@@ -62,10 +62,10 @@ call minpac#add('https://github.com/google/vim-searchindex.git')
 
 " colorschemes
 call minpac#add('https://github.com/sainnhe/gruvbox-material.git')
-call minpac#add('chriskempson/base16-vim')
-call minpac#add('joshdick/onedark.vim')
-call minpac#add('morhetz/gruvbox')
-call minpac#add('drewtempelmeyer/palenight.vim')
+" call minpac#add('chriskempson/base16-vim')
+" call minpac#add('joshdick/onedark.vim')
+" call minpac#add('morhetz/gruvbox')
+" call minpac#add('drewtempelmeyer/palenight.vim')
 
 " minpac utility commands
   command! PackUpdate call minpac#update()
