@@ -66,6 +66,9 @@ nnoremap <C-m> %
 " crtl - \ for NERDTreeToggle
 noremap <C-\> :NERDTreeToggle<CR>
 " autocmd vimenter * NERDTree
+" let g:ranger_map_keys = 0
+" noremap <C-\> :Ranger<CR>
+
 
 " toggle Commentary
 nnoremap <C-_> :Commentary<CR>

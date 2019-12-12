@@ -32,6 +32,8 @@ set directory=~/.config/nvim/sub/swaps
 set undodir=~/.config/nvim/sub/undo
 set undofile
 set list listchars=tab:▸▸,trail:·
+set ignorecase
+set smartcase
 
 " change foldmethod for pug
 autocmd Filetype pug setlocal foldmethod=indent

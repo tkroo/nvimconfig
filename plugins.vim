@@ -31,6 +31,9 @@ Plug '1995eaton/vim-better-javascript-completion'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'francoiscabrol/ranger.vim'
+" Plug 'rbgrouleff/bclose.vim'
+
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'mgee/lightline-bufferline'
@@ -52,6 +55,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ervandew/supertab'
+Plug 'DougBeney/pickachu'
 " Plug 'tpope/vim-unimpaired'
 " Plug 'terryma/vim-multiple-cursors'
 "Plug 'mhinz/vim-startify'
