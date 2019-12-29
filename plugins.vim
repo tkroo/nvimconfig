@@ -12,13 +12,6 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-
-"Javascript Plugins
-Plug 'pangloss/vim-javascript'
-Plug 'carlitux/deoplete-ternjs'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug '1995eaton/vim-better-javascript-completion'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -27,6 +20,20 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'mgee/lightline-bufferline'
 Plug 'ap/vim-buftabline'
+
+" formatting
+Plug 'mattn/emmet-vim', { 'for': ['html','css'] }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+
+" syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'https://github.com/google/vim-searchindex.git'
+
+"Javascript Plugins
+Plug 'pangloss/vim-javascript'
+Plug 'carlitux/deoplete-ternjs'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+Plug '1995eaton/vim-better-javascript-completion'
 
 " git
 Plug 'https://github.com/airblade/vim-gitgutter.git'
@@ -46,14 +53,6 @@ Plug 'ervandew/supertab'
 Plug 'DougBeney/pickachu'
 " Plug 'tpope/vim-unimpaired'
 " Plug 'terryma/vim-multiple-cursors'
-
-" formatting
-Plug 'mattn/emmet-vim', { 'for': ['html','css'] }
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-
-" syntax
-Plug 'sheerun/vim-polyglot'
-Plug 'https://github.com/google/vim-searchindex.git'
 
 " colorschemes
 Plug 'https://github.com/sainnhe/gruvbox-material.git'
