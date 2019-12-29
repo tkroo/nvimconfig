@@ -10,11 +10,8 @@ call plug#begin('~/.config/nvim/plugged')
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
+
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-" Plug 'universal-ctags/ctags'
-" Plug 'ludovicchabant/vim-gutentags'
-" Plug 'skywind3000/gutentags_plus'
-" Plug 'neomake/neomake', { 'on': 'Neomake' }
 
 "Javascript Plugins
 Plug 'pangloss/vim-javascript'
@@ -22,23 +19,14 @@ Plug 'carlitux/deoplete-ternjs'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
 Plug '1995eaton/vim-better-javascript-completion'
 
-"Typescript Plugins
-" Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-" Plug 'Quramy/tsuquyomi'
-" Plug 'mhartington/deoplete-typescript'
-"Plug 'leafgarland/typescript-vim'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'francoiscabrol/ranger.vim'
-" Plug 'rbgrouleff/bclose.vim'
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'mgee/lightline-bufferline'
 Plug 'ap/vim-buftabline'
-"Plug 'majutsushi/tagbar'
 
 " git
 Plug 'https://github.com/airblade/vim-gitgutter.git'
@@ -58,7 +46,6 @@ Plug 'ervandew/supertab'
 Plug 'DougBeney/pickachu'
 " Plug 'tpope/vim-unimpaired'
 " Plug 'terryma/vim-multiple-cursors'
-"Plug 'mhinz/vim-startify'
 
 " formatting
 Plug 'mattn/emmet-vim', { 'for': ['html','css'] }
@@ -95,18 +82,5 @@ let g:deoplete#sources#tss#javascript_support = 1
 let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_auto_open = 1
 let g:tsuquyomi_disable_quickfix = 1
-
-" enable gtags module
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
-" config project root markers.
-let g:gutentags_project_root = ['.root']
-" generate datebases in my cache directory, prevent gtags files polluting my project
-let g:gutentags_cache_dir = expand('~/.cache/tags')
-" change focus to quickfix window after search (optional).
-let g:gutentags_plus_switch = 1
-
-" autocmd! BufWritePost * Neomake
-" let g:neomake_warning_sign = { 'text': '?', 'texthl': 'WarningMsg' }
-" let g:neomake_error_sign = { 'text': 'X', 'texthl': 'ErrorMsg' }
 
 let g:NERDTreeStatusline = '%#NonText#'
