@@ -57,13 +57,14 @@ cabbrev PU PlugUpdate
 
 " set python paths
 let g:python_host_prog="/usr/bin/python"
-let g:python3_host_prog="/usr/bin/python3"
+" let g:python3_host_prog="/usr/bin/python3"
+let g:python3_host_prog="/home/david/.pyenv/shims/python3"
 
-" map ctrl-p to FZF
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " The Silver Searcher
 if executable('ag')
+  " map ctrl-p to FZF
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
 
