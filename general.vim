@@ -8,7 +8,7 @@ set hidden
 set mouse=a
 set number relativenumber
 " open help on right in vertical split
-cnoreabbrev H vert bo h 
+cnoreabbrev H vert bo h
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 set colorcolumn=80
@@ -57,8 +57,8 @@ cabbrev PU PlugUpdate
 
 " set python paths
 let g:python_host_prog="/usr/bin/python"
-" let g:python3_host_prog="/usr/bin/python3"
-let g:python3_host_prog="/home/david/.pyenv/shims/python3"
+let g:python3_host_prog="/usr/bin/python3"
+" let g:python3_host_prog="/home/david/.pyenv/shims/python3"
 
 
 " The Silver Searcher
