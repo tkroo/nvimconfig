@@ -1,3 +1,5 @@
+" source whichkey config
+" source $HOME/.config/nvim/keys/which-key.vim
 
 " plugins moved to separate file
 source ~/.config/nvim/plugins.vim

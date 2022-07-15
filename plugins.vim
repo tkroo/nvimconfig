@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-
+" Plug 'liuchengxu/vim-which-key'
 " Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'

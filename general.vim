@@ -35,6 +35,11 @@ set list listchars=tab:▸▸,trail:·
 set ignorecase
 set smartcase
 
+" prevent hiding in JSON and markdown
+let g:vim_json_syntax_conceal = 0
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
 " change foldmethod for pug
 autocmd Filetype pug setlocal foldmethod=indent
 autocmd BufNewFile,BufRead *.js set ft=javascript

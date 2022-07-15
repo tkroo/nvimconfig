@@ -109,7 +109,8 @@ nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprev<CR>
 
 " list and select buffer
-nnoremap <silent> <leader>bg :ls<CR>:buffer<Space>
+" nnoremap <silent> <leader>bg :ls<CR>:buffer<Space>
+nnoremap <silent> <leader>bg :ls<CR>:Buffers<CR>
 
 set pastetoggle=<F5>
 
